@@ -1,0 +1,228 @@
+Test case 1: reading the notes from the file
+Line 5: Invalid Month (expected: 1 to 12): 32
+7 notes read from the file (sorted by title)
+Dinner                  02/19/2025      In the microwave    
+Left                    02/25/2025      Will be back in 5 minutes
+Midterm exam week       01/26/2025      Prepare for the exams
+Party                   01/22/2025      Order the cake      
+Reminder                12/10/2024      Buy milk and yogurt 
+Spring                  03/21/2025      Try new plants      
+Trash                   02/11/2025      Buy bags            
+
+
+Test case 2: Adding a new note to the list
+Note: (Medicine, 02/28/2025, Pick up at the pharmacy) added successfully.
+Updated list of notes
+Dinner                  02/19/2025      In the microwave    
+Left                    02/25/2025      Will be back in 5 minutes
+Medicine                02/28/2025      Pick up at the pharmacy
+Midterm exam week       01/26/2025      Prepare for the exams
+Party                   01/22/2025      Order the cake      
+Reminder                12/10/2024      Buy milk and yogurt 
+Spring                  03/21/2025      Try new plants      
+Trash                   02/11/2025      Buy bags            
+
+
+Test case 3: Finding a note (success)
+Note with title "Trash" found:
+(Trash, 02/11/2025, Buy bags)
+
+Test case 4: Removing a note from the list
+Note (Trash, 02/11/2025, Buy bags) removed successfully.
+Updated list of notes
+Dinner                  02/19/2025      In the microwave    
+Left                    02/25/2025      Will be back in 5 minutes
+Medicine                02/28/2025      Pick up at the pharmacy
+Midterm exam week       01/26/2025      Prepare for the exams
+Party                   01/22/2025      Order the cake      
+Reminder                12/10/2024      Buy milk and yogurt 
+Spring                  03/21/2025      Try new plants      
+
+
+Test case 5: Finding a note (fail)
+Note with title "Buy pens" not found.
+
+Test case 6: Finding a note and modifying it
+Note with title "Dinner" found:
+(Dinner, 02/19/2025, In the microwave)
+Note (Dinner, 04/22/2025, In the microwave) updated successfully.
+Updated list of notes
+Dinner                  04/22/2025      In the microwave    
+Left                    02/25/2025      Will be back in 5 minutes
+Medicine                02/28/2025      Pick up at the pharmacy
+Midterm exam week       01/26/2025      Prepare for the exams
+Party                   01/22/2025      Order the cake      
+Reminder                12/10/2024      Buy milk and yogurt 
+Spring                  03/21/2025      Try new plants      
+
+
+Test case 7: Sorting the notes by date
+List of notes sorted by date
+Reminder                12/10/2024      Buy milk and yogurt 
+Party                   01/22/2025      Order the cake      
+Midterm exam week       01/26/2025      Prepare for the exams
+Left                    02/25/2025      Will be back in 5 minutes
+Medicine                02/28/2025      Pick up at the pharmacy
+Spring                  03/21/2025      Try new plants      
+Dinner                  04/22/2025      In the microwave    
+
+
+Test case 8: reading the contacts from the file
+Line 19: Invalid phone format (ddd-ddd-dddd): 4144-661-9598
+Line 25: Invalid email format (word@word.(com|org|net|edu)): grim@cmu.mom
+25 contacts read from the file (sorted by email)
+Maclead Abel            631-335-3414    amaclead@gmail.com  
+Venere Art              913-388-2079    avenere@gmail.com   
+Nicka Bette             610-545-3615    bnicka@mit.edu      
+Albares Cammy           212-860-1579    calbares@lehigh.edu 
+Foller Donette          513-570-1893    dfoller@gmail.com   
+Flosi Fletcher          815-828-2147    fflosi@gmail.com    
+Rim Gladys              414-661-9598    grim@cmu.edu        
+Ruta Graciela           440-780-8425    gruta@gmail.com     
+Butt James              907-385-4412    jbutt@gmail.com     
+Darakjy Josephine       913-388-2079    jdarakjy@gmail.com  
+Caldarera Kiley         310-498-5651    kcaldarera@gmail.com
+Marrier Kris            505-977-3911    kmarrier@lehigh.edu 
+Rulapaugh Kati          785-463-7829    krulapaugh@gmail.com
+Dilliard Leota          408-752-3500    ldilliard@gmail.com 
+Paprocki Lenna          907-385-4412    lpaprocki@acm.org   
+Amigon Minna            201-709-6245    mamigon@gmail.com   
+Garufi Meaghan          805-832-6163    mgarufi@gmail.com   
+Poquette Mattie         602-277-4385    mpoquette@gmail.com 
+Tollner Mitsue          773-573-6914    mtollner@acm.org    
+Morasca Simona          212-582-4976    smorasca@gmail.com  
+Wieser Sage             605-414-2147    swieser@gmail.com   
+Inouye Veronika         408-540-1785    vinouye@gmail.com   
+Kolmetz Willard         732-658-3154    wkolmetz@lehigh.edu 
+Schemmer Youlanda       541-548-8197    yschemmer@gmail.com 
+Whobrey Yuki            313-288-7937    ywhobrey@gmail.com  
+
+
+Test case 9: Adding a new contact to the list
+Contact (Albert Floss, 610-222-2434, afloss@lehigh.edu) added successfully.
+Updated list of contacts
+Albert Floss            610-222-2434    afloss@lehigh.edu   
+Maclead Abel            631-335-3414    amaclead@gmail.com  
+Venere Art              913-388-2079    avenere@gmail.com   
+Nicka Bette             610-545-3615    bnicka@mit.edu      
+Albares Cammy           212-860-1579    calbares@lehigh.edu 
+Foller Donette          513-570-1893    dfoller@gmail.com   
+Flosi Fletcher          815-828-2147    fflosi@gmail.com    
+Rim Gladys              414-661-9598    grim@cmu.edu        
+Ruta Graciela           440-780-8425    gruta@gmail.com     
+Butt James              907-385-4412    jbutt@gmail.com     
+Darakjy Josephine       913-388-2079    jdarakjy@gmail.com  
+Caldarera Kiley         310-498-5651    kcaldarera@gmail.com
+Marrier Kris            505-977-3911    kmarrier@lehigh.edu 
+Rulapaugh Kati          785-463-7829    krulapaugh@gmail.com
+Dilliard Leota          408-752-3500    ldilliard@gmail.com 
+Paprocki Lenna          907-385-4412    lpaprocki@acm.org   
+Amigon Minna            201-709-6245    mamigon@gmail.com   
+Garufi Meaghan          805-832-6163    mgarufi@gmail.com   
+Poquette Mattie         602-277-4385    mpoquette@gmail.com 
+Tollner Mitsue          773-573-6914    mtollner@acm.org    
+Morasca Simona          212-582-4976    smorasca@gmail.com  
+Wieser Sage             605-414-2147    swieser@gmail.com   
+Inouye Veronika         408-540-1785    vinouye@gmail.com   
+Kolmetz Willard         732-658-3154    wkolmetz@lehigh.edu 
+Schemmer Youlanda       541-548-8197    yschemmer@gmail.com 
+Whobrey Yuki            313-288-7937    ywhobrey@gmail.com  
+
+
+Test case 10: Sorting the contacts by name
+List of contacts sorted by name
+Albares Cammy           212-860-1579    calbares@lehigh.edu 
+Albert Floss            610-222-2434    afloss@lehigh.edu   
+Amigon Minna            201-709-6245    mamigon@gmail.com   
+Butt James              907-385-4412    jbutt@gmail.com     
+Caldarera Kiley         310-498-5651    kcaldarera@gmail.com
+Darakjy Josephine       913-388-2079    jdarakjy@gmail.com  
+Dilliard Leota          408-752-3500    ldilliard@gmail.com 
+Flosi Fletcher          815-828-2147    fflosi@gmail.com    
+Foller Donette          513-570-1893    dfoller@gmail.com   
+Garufi Meaghan          805-832-6163    mgarufi@gmail.com   
+Inouye Veronika         408-540-1785    vinouye@gmail.com   
+Kolmetz Willard         732-658-3154    wkolmetz@lehigh.edu 
+Maclead Abel            631-335-3414    amaclead@gmail.com  
+Marrier Kris            505-977-3911    kmarrier@lehigh.edu 
+Morasca Simona          212-582-4976    smorasca@gmail.com  
+Nicka Bette             610-545-3615    bnicka@mit.edu      
+Paprocki Lenna          907-385-4412    lpaprocki@acm.org   
+Poquette Mattie         602-277-4385    mpoquette@gmail.com 
+Rim Gladys              414-661-9598    grim@cmu.edu        
+Rulapaugh Kati          785-463-7829    krulapaugh@gmail.com
+Ruta Graciela           440-780-8425    gruta@gmail.com     
+Schemmer Youlanda       541-548-8197    yschemmer@gmail.com 
+Tollner Mitsue          773-573-6914    mtollner@acm.org    
+Venere Art              913-388-2079    avenere@gmail.com   
+Whobrey Yuki            313-288-7937    ywhobrey@gmail.com  
+Wieser Sage             605-414-2147    swieser@gmail.com   
+
+
+Test case 11: Finding a contact (fail)
+Contact "Philip Mensen" not found.
+
+Test case 12: Finding a contact (success)
+Contact found
+(Butt James, 907-385-4412, jbutt@gmail.com)
+
+Test case 13: Removing a contact from the list
+Contact(Butt James, 907-385-4412, jbutt@gmail.com) removed successfully.
+Updated list of contacts
+Albares Cammy           212-860-1579    calbares@lehigh.edu 
+Albert Floss            610-222-2434    afloss@lehigh.edu   
+Amigon Minna            201-709-6245    mamigon@gmail.com   
+Caldarera Kiley         310-498-5651    kcaldarera@gmail.com
+Darakjy Josephine       913-388-2079    jdarakjy@gmail.com  
+Dilliard Leota          408-752-3500    ldilliard@gmail.com 
+Flosi Fletcher          815-828-2147    fflosi@gmail.com    
+Foller Donette          513-570-1893    dfoller@gmail.com   
+Garufi Meaghan          805-832-6163    mgarufi@gmail.com   
+Inouye Veronika         408-540-1785    vinouye@gmail.com   
+Kolmetz Willard         732-658-3154    wkolmetz@lehigh.edu 
+Maclead Abel            631-335-3414    amaclead@gmail.com  
+Marrier Kris            505-977-3911    kmarrier@lehigh.edu 
+Morasca Simona          212-582-4976    smorasca@gmail.com  
+Nicka Bette             610-545-3615    bnicka@mit.edu      
+Paprocki Lenna          907-385-4412    lpaprocki@acm.org   
+Poquette Mattie         602-277-4385    mpoquette@gmail.com 
+Rim Gladys              414-661-9598    grim@cmu.edu        
+Rulapaugh Kati          785-463-7829    krulapaugh@gmail.com
+Ruta Graciela           440-780-8425    gruta@gmail.com     
+Schemmer Youlanda       541-548-8197    yschemmer@gmail.com 
+Tollner Mitsue          773-573-6914    mtollner@acm.org    
+Venere Art              913-388-2079    avenere@gmail.com   
+Whobrey Yuki            313-288-7937    ywhobrey@gmail.com  
+Wieser Sage             605-414-2147    swieser@gmail.com   
+
+
+Test case 14: Finding a contact and modifying it
+Contact with name "Amigon Minna" found:
+(Amigon Minna,201-709-6245, mamigon@gmail.com)
+Contact (Amigon Minna,201-709-6245,mamigon@lehigh.edu) updated successfully.
+Updated list of contacts
+Albares Cammy           212-860-1579    calbares@lehigh.edu 
+Albert Floss            610-222-2434    afloss@lehigh.edu   
+Amigon Minna            201-709-6245    mamigon@lehigh.edu  
+Caldarera Kiley         310-498-5651    kcaldarera@gmail.com
+Darakjy Josephine       913-388-2079    jdarakjy@gmail.com  
+Dilliard Leota          408-752-3500    ldilliard@gmail.com 
+Flosi Fletcher          815-828-2147    fflosi@gmail.com    
+Foller Donette          513-570-1893    dfoller@gmail.com   
+Garufi Meaghan          805-832-6163    mgarufi@gmail.com   
+Inouye Veronika         408-540-1785    vinouye@gmail.com   
+Kolmetz Willard         732-658-3154    wkolmetz@lehigh.edu 
+Maclead Abel            631-335-3414    amaclead@gmail.com  
+Marrier Kris            505-977-3911    kmarrier@lehigh.edu 
+Morasca Simona          212-582-4976    smorasca@gmail.com  
+Nicka Bette             610-545-3615    bnicka@mit.edu      
+Paprocki Lenna          907-385-4412    lpaprocki@acm.org   
+Poquette Mattie         602-277-4385    mpoquette@gmail.com 
+Rim Gladys              414-661-9598    grim@cmu.edu        
+Rulapaugh Kati          785-463-7829    krulapaugh@gmail.com
+Ruta Graciela           440-780-8425    gruta@gmail.com     
+Schemmer Youlanda       541-548-8197    yschemmer@gmail.com 
+Tollner Mitsue          773-573-6914    mtollner@acm.org    
+Venere Art              913-388-2079    avenere@gmail.com   
+Whobrey Yuki            313-288-7937    ywhobrey@gmail.com  
+Wieser Sage             605-414-2147    swieser@gmail.com 
