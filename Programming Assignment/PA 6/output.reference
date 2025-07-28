@@ -1,0 +1,125 @@
+Test case 1: Reading the CSV file of Netflix shows
+8801 shows loaded from the file
+
+Test case 2: finding the number of movies
+Number of movies in the list: 6125
+
+Test case 3: finding the number of TV shows
+Number of TV shows in the list: 2676
+
+Test case 4: finding a show by title (successful)
+Show found:
+s4630   TV Show         Maniac                                                                                  United States                   2018    TV-MA   1    
+
+Test case 5: finding a show by title (fail)
+No show found with the title "This Is Us"
+
+Test case 6: finding the list of shows for a given director (successful)
+s42     Movie           Jaws                                                    Steven Spielberg                United States                   1975    PG      124  
+s330    Movie           Catch Me If You Can                                     Steven Spielberg                United States, Canada           2002    PG-13   142  
+s1204   Movie           The BFG                                                 Steven Spielberg                United States, India, United Kingdom    2016    PG      118  
+s7071   Movie           Indiana Jones and the Kingdom of the Crystal Skull      Steven Spielberg                United States                   2008    PG-13   123  
+s7072   Movie           Indiana Jones and the Last Crusade                      Steven Spielberg                United States                   1989    PG-13   127  
+s7073   Movie           Indiana Jones and the Raiders of the Lost Ark           Steven Spielberg                United States                   1981    PG      116  
+s7074   Movie           Indiana Jones and the Temple of Doom                    Steven Spielberg                United States                   1984    PG      119  
+s7309   Movie           Lincoln                                                 Steven Spielberg                United States, India            2012    PG-13   150  
+s7958   Movie           Schindler's List                                        Steven Spielberg                United States                   1993    R       195  
+s8185   Movie           The Adventures of Tintin                                Steven Spielberg                United States, New Zealand, United Kingdom      2011    PG     107  
+s8697   Movie           War Horse                                               Steven Spielberg                United States, India            2011    PG-13   147  
+11 shows found for the director "Steven Spielberg"
+
+Test case 7: finding the list of shows for a given director (fail)
+No show found for the director "James Cameron"
+
+Test case 8: finding the list of shows for a given actor (successful)
+s3528   TV Show         The Mind, Explained                                                                     United States                   2019    TV-14   1    
+s4630   TV Show         Maniac                                                                                  United States                   2018    TV-MA   1    
+s6663   Movie           Easy A                                                  Will Gluck                      United States                   2010    PG-13   92   
+s8127   Movie           Superbad                                                Greg Mottola                    United States                   2007    R       113  
+s8259   Movie           The Croods                                              Kirk De Micco, Chris Sanders    United States                   2013    PG      99   
+s8342   Movie           The Help                                                Tate Taylor                     United States                   2011    PG-13   147  
+s8805   Movie           Zombieland                                              Ruben Fleischer                 United States                   2009    R       88   
+7 shows found for the actress "Emma Stone"
+
+Test case 9: finding the list of shows for a given actor (fail)
+No show found for the actor "Pierre Richard"
+
+Test case 10: finding the list of shows for a given year
+Number of shows released in 2015: 558
+Number of shows released in 2020: 953
+
+Test case 11: finding the list of movies for a given year
+Number of movies released in 2015: 396
+Number of movies released in 2020: 517
+
+Test case 12: finding the list of TV shows for a given year
+Number of TV shows released in 2015: 162
+Number of TV shows released in 2020: 436
+
+Test case 13: viewing the growth of shows over a range of years
+Growth of the number of shows from 2015 to 2021
+Year    # Shows Growth
+2015    558  
+2016    902     61.6%
+2017    1031    14.3%
+2018    1147    11.3%
+2019    1030    -10.2%
+2020    953     -7.5%
+2021    592     -37.9%
+Average         5.3%
+
+Test case 14: finding the list of shows for a given rating (TV-MA)
+Number of TV shows with rating "TV-MA": 1145
+Number of movies with rating "TV-MA": 2061
+
+Test case 15: finding the list of shows for a given rating (PG-13)
+Number of TV shows with rating "PG-13": 0
+Number of movies with rating "PG-13": 490
+
+Test case 16: viewing the top 20 countries for movie production
+Number of countries: 749
+Country                                                 Number of movies
+United States                                           2053      
+India                                                   893       
+                                                        440       
+United Kingdom                                          205       
+Canada                                                  122       
+Spain                                                   97        
+Egypt                                                   92        
+Nigeria                                                 86        
+Indonesia                                               77        
+Japan                                                   76        
+Turkey                                                  76        
+France                                                  75        
+Philippines                                             73        
+Mexico                                                  70        
+United Kingdom, United States                           63        
+United States, Canada                                   51        
+Brazil                                                  50        
+Hong Kong                                               50        
+Germany                                                 47        
+South Korea                                             41        
+
+Test case 17: viewing the top 20 countries for TV show production
+Number of countries: 749
+Country                                                 Number of shows
+United States                                           760       
+                                                        391       
+United Kingdom                                          213       
+Japan                                                   169       
+South Korea                                             158       
+India                                                   79        
+Taiwan                                                  68        
+Canada                                                  59        
+France                                                  49        
+Spain                                                   48        
+Australia                                               48        
+Mexico                                                  40        
+China                                                   38        
+Turkey                                                  29        
+Brazil                                                  27        
+Thailand                                                24        
+Colombia                                                22        
+United States, Canada                                   22        
+Germany                                                 20        
+Argentina                                               18 
