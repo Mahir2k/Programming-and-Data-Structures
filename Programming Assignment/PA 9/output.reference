@@ -1,0 +1,50 @@
+99733 users read from the file "users.txt"
+100 email addresses read from the file "mailingList.txt"
+
+Test case 1: the search method get(key) performance
+Username                        HashMapSC       HashMapLP       HashMapQP 
+dmv183@lehigh.edu               1               1               1         
+kte178@lehigh.edu               1               1               1         
+cvw020@lehigh.edu               1               1               1         
+zeh930@lehigh.edu               1               1               1         
+rlw966@lehigh.edu               1               1               1         
+vra630@lehigh.edu               2               1               1         
+shz082@lehigh.edu               2               3               3         
+jgm775@lehigh.edu               1               1               1         
+zew997@lehigh.edu               2               3               3         
+ikt687@lehigh.edu               2               2               2         
+zyw480@lehigh.edu               2               2               2         
+txa379@lehigh.edu               1               1               1         
+ahv790@lehigh.edu               1               1               1         
+bdp891@lehigh.edu               1               1               1         
+htf336@lehigh.edu               1               1               1         
+wsw888@lehigh.edu               1               3               1         
+txa974@lehigh.edu               1               1               1         
+etg099@lehigh.edu               1               1               1         
+cfy712@lehigh.edu               1               1               1         
+ivg605@lehigh.edu               1               1               1         
+Average                         1               1               1         
+
+Test case 2: comparing the characteristics of the three hash tables
+Characteristic                                          HashMapSC       HashMapLP       HashMapQP 
+Capacity                                                131072          262144          262144    
+Size                                                    99733           99733           99733     
+Collisions                                              29806           18793           18739     
+Number of buckets/clusters                              69927           51441           54836     
+Largest bucket/cluster                                  8               29              17        
+Smallest bucket/cluster                                 1               1               1         
+
+Test case 3: testing the number of collisions for different starting capacities
+Size            HashMapSC       HashMapLP       HashMapQP 
+50000           29806           18793           18730     
+100000          29806           18793           18739     
+150000          16567           18793           18795     
+200000          16567           18793           18795     
+250000          16567           18793           18795     
+300000          8730            9304            9298      
+350000          8730            9304            9298      
+400000          8730            9304            9298      
+450000          8730            9304            9298      
+500000          8730            9304            9298      
+
+Test case 4: testing the external merge sort algorithm
