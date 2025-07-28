@@ -1,0 +1,142 @@
+Testing the ArrayList
+==================================================
+
+Test case 1: The add methods: add(E), add(int,E), addFirst(E), addLast(E)
+[44 11 33 66 22 88 55 77]
+
+Test case 2: The clone method
+[44 11 33 66 22 88 55 77].clone() = [44 11 33 66 22 88 55 77]
+
+Test case 3: The collection methods: addAll, containsAll, retainAll, removeAll
+[111 77 222 55].addAll([44 11 33 66 22 88 55 77]) = [111 77 222 55 44 11 33 66 22 88 55 77]
+[44 11 33 66 22 88 55 77].retainAll([111 77 222 55]) = [55 77]
+[44 11 33 66 22 88 55 77].removeAll([111 77 222 55]) = [44 11 33 66 22 88]
+[44 11 33 66 22 88 55 77].containsAll([44 11 33 66 22 88 55 77]) = true
+[11 33 66 22 88 55 77].containsAll([44 11 33 66 22 88 55 77]) = false
+
+Test case 4: The getters: get(int), getFirst(), getLast()
+[11 33 66 22 88 55 77].get(3) = 22
+[11 33 66 22 88 55 77].getFirst() = 11
+[11 33 66 22 88 55 77].getLast() = 77
+
+Test case 5: The set method
+[11 33 66 44 88 55 77].set(3, 44) = 22
+Modified list : [11 33 66 44 88 55 77]
+
+Test case 6: The remove methods: remove(Object), remove(int), removeFirst(), removeLast()
+[44 11 33 66 22 88 55 77]
+remove(55) = true
+removeFirst() = 44
+removeLast() = 77
+remove(2) = 66
+Modified list: [11 33 22 88]
+
+Test case 7: The search methods: contains(Object), indexOf(Object), lastIndexOf(Object)
+[11 33 66 44 88 55 77].contains(88) = true
+[11 33 66 44 88 55 77].contains(111) = false
+[11 33 66 44 88 55 77].indexOf(55) = 5
+[11 33 66 44 88 55 77].indexOf(222) = -1
+[11 33 66 44 88 55 77].lastIndexOf(77) = 6
+[11 33 66 44 88 55 77].lastIndexOf(222) = -1
+Unmodified list: [11 33 66 44 88 55 77]
+
+Test case 8: The iterator methods: iterator, listIterator, listIterator(int)
+Iterator from 0 to 6: 11 33 66 44 88 55 77 
+ListIterator from 0 to 6, then from 6 to 0: 11 33 66 44 88 55 77 77 55 88 44 66 33 11 
+ListIterator from 3 to 0, then from 0 to 6: 44 66 33 11 11 33 66 44 88 55 77 
+
+Test case 9: The equals method
+[11 33 66 44 88 55 77].equals([111 77 222 55]) ? false
+[11 33 66 44 88 55 77].equals([11 33 66 44 88 55 77]) ? true
+
+Test case 10: The sort method
+list1: [11 33 66 44 88 55 77]
+list1 sorted using the natural ordering: [11 33 44 55 66 77 88]
+list2: [1000 900 1500 33 555 88]
+list2 sorted using the number of digits: [33 88 555 900 1500 1000]
+
+Test case 11: The toArray method
+[11 33 44 55 66 77 88].toArray() = [11 33 44 55 66 77 88 ]
+
+Test case 12: The reversed method
+list before reverse(): [33 88 555 900 1500 1000]
+list after reverse(): [1000 1500 900 555 88 33]
+
+Test case 13: The subList method
+list: [33 88 555 900 1500 1000]
+sublist from 0 to 6: [33 88 555 900 1500 1000]
+sublist from 1 to 3: [88 555]
+sublist from 5 to 2: []
+sublist from 3 to 3: []
+
+
+Testing the LinkedList
+==================================================
+
+Test case 1: The add methods: add(E), add(int,E), addFirst(E), addLast(E)
+[44 11 33 66 22 88 55 77]
+
+Test case 2: The clone method
+[44 11 33 66 22 88 55 77].clone() = [44 11 33 66 22 88 55 77]
+
+Test case 3: The collection methods: addAll, containsAll, retainAll, removeAll
+[111 77 222 55].addAll([44 11 33 66 22 88 55 77]) = [111 77 222 55 44 11 33 66 22 88 55 77]
+[44 11 33 66 22 88 55 77].retainAll([111 77 222 55]) = [55 77]
+[44 11 33 66 22 88 55 77].removeAll([111 77 222 55]) = [44 11 33 66 22 88]
+[44 11 33 66 22 88 55 77].containsAll([44 11 33 66 22 88 55 77]) = true
+[11 33 66 22 88 55 77].containsAll([44 11 33 66 22 88 55 77]) = false
+
+Test case 4: The getters: get(int), getFirst(), getLast()
+[11 33 66 22 88 55 77].get(3) = 22
+[11 33 66 22 88 55 77].getFirst() = 11
+[11 33 66 22 88 55 77].getLast() = 77
+
+Test case 5: The set method
+[11 33 66 44 88 55 77].set(3, 44) = 22
+Modified list : [11 33 66 44 88 55 77]
+
+Test case 6: The remove methods: remove(Object), remove(int), removeFirst(), removeLast()
+[44 11 33 66 22 88 55 77]
+remove(55) = true
+removeFirst() = 44
+removeLast() = 77
+remove(2) = 66
+Modified list: [11 33 22 88]
+
+Test case 7: The search methods: contains(Object), indexOf(Object), lastIndexOf(Object)
+[11 33 66 44 88 55 77].contains(88) = true
+[11 33 66 44 88 55 77].contains(111) = false
+[11 33 66 44 88 55 77].indexOf(55) = 5
+[11 33 66 44 88 55 77].indexOf(222) = -1
+[11 33 66 44 88 55 77].lastIndexOf(77) = 6
+[11 33 66 44 88 55 77].lastIndexOf(222) = -1
+Unmodified list: [11 33 66 44 88 55 77]
+
+Test case 8: The iterator methods: iterator, listIterator, listIterator(int)
+Iterator from 0 to 6: 11 33 66 44 88 55 77 
+ListIterator from 0 to 6, then from 6 to 0: 11 33 66 44 88 55 77 77 55 88 44 66 33 11 
+ListIterator from 3 to 0, then from 0 to 6: 44 66 33 11 11 33 66 44 88 55 77 
+
+Test case 9: The equals method
+[11 33 66 44 88 55 77].equals([111 77 222 55]) ? false
+[11 33 66 44 88 55 77].equals([11 33 66 44 88 55 77]) ? true
+
+Test case 10: The sort method
+list1: [11 33 66 44 88 55 77]
+list1 sorted using the natural ordering: [11 33 44 55 66 77 88]
+list2: [1000 900 1500 33 555 88]
+list2 sorted using the number of digits: [33 88 555 900 1500 1000]
+
+Test case 11: The toArray method
+[11 33 44 55 66 77 88].toArray() = [11 33 44 55 66 77 88 ]
+
+Test case 12: The reversed method
+list before reverse(): [33 88 555 900 1500 1000]
+list after reverse(): [1000 1500 900 555 88 33]
+
+Test case 13: The subList method
+list: [33 88 555 900 1500 1000]
+sublist from 0 to 6: [33 88 555 900 1500 1000]
+sublist from 1 to 3: [88 555]
+sublist from 5 to 2: []
+sublist from 3 to 3: []
