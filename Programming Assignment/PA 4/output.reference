@@ -1,0 +1,32 @@
+Test case 1: looking for the word "Hello" in all the files under the folder test_tree\
+Hello found 1 times in /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/Test.java
+Hello found 9 times in /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/folder_2/bee_movie.txt
+Hello found 1 times in /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/folder_2/Test.java
+Hello found 4 times in /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/folder_1/chatgpt_poem.txt
+
+Test case 2: looking for the word "Test" in all the files under the folder test_tree\
+Test found 1 times in /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/Test.java
+Test found 1 times in /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/folder_2/pa_4.MD
+Test found 4 times in /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/folder_2/folder_2_1/script.sh
+Test found 1 times in /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/folder_2/Test.java
+
+Test case 3: looking for the file "Test.java" in the hierarchy under the folder test_tree\
+Test.java found in /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/Test.java
+Test.java found in /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/folder_2/Test.java
+
+Test case 4: looking for the file "dummy.txt"  in the hierarchy under the folder test_tree\
+File "dummy.txt" not found
+
+Test case 5: listing the contents of the folder /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree
+folder_3	0 Bytes
+Test.java	114 Bytes
+speech.txt	1.51 KB
+folder_2	87.92 KB
+folder_1	883 Bytes
+prog.exe	128.65 KB
+
+Test case 6: listing the contents of the file/folder "dummy\"
+
+Test case 7: Deleting all the empty files in the folder /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree
+File " /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/folder_2/folder_2_1/empty.txt" removed successfully
+File " /home/houdghiri/Spring_2025/CSE017/PAs/PA_4/test_tree/folder_1/empty.txt" removed successfully
