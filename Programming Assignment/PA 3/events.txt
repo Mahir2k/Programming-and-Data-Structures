@@ -1,0 +1,9 @@
+Appointment,Advising,RB-184,01/23/2024,12:20,Shelly Roberts
+Appointment,SPA,Beauty & Peace,12/20/2024,18:00,Lisa Mealy
+Meeting,CSE017 class,RB-184,01/20/2025,09:20,Houria Oudghiri,114
+Appointment,Doctor,Lehigh Valley Clinic,01/22/2025,11:10,Kathy Brown
+Meeting,Programming Club,RB-184,01/23/2025,10:45,Jack Buster,15
+Meeting,Research Seminar,BC-307,01/23/2025,17:30,Robin Atwood,35
+Appointment,Dentist,Dental Center,02/24/2025,13:15,Kelly Sullivan
+Meeting,Science Fair,Stadium,05/12/2025,10:15,Stacy Bouchard,100
+Appointment,Bank,Wells Fargo,05/12/2025,10:30,Sarah Clark
