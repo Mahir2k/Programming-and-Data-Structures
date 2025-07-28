@@ -1,0 +1,78 @@
+
+Test case 1: adding events to the calendar (successful)
+Event Type      Description             Location                Date            Time    Contact/Host    Guests
+Meeting         CSE017 class            RB-184                  01/20/2025      9:20    Houria Oudghiri 114  
+Appointment     Doctor                  Lehigh Valley Clinic    01/22/2025      11:10   Kathy Brown    
+Meeting         Programming Club        RB-184                  01/23/2025      10:45   Jack Buster     15   
+Appointment     Bank                    Wells Fargo             05/12/2025      10:30   Sarah Clark    
+Meeting         Tutoring                RB-184                  03/22/2025      16:30   Chris Rock      10   
+Appointment     Dentist                 Dental Center           02/24/2025      13:15   Kelly Sullivan 
+Appointment     Advising                RB-184                  01/23/2024      12:20   Shelly Roberts 
+Appointment     SPA                     Beauty & Peace          12/20/2024      18:00   Lisa Mealy     
+Meeting         Science Fair            Stadium                 05/12/2025      10:15   Stacy Bouchard  100  
+Meeting         Research Seminar        BC-307                  01/23/2025      17:30   Robin Atwood    35   
+
+
+Test case 2: adding events to the calendar (fail)
+Cannot add new events. The calendar is full.
+
+Test case 3: find an event (successful)
+Event "Tutoring" found: 
+Meeting         Tutoring                RB-184                  03/22/2025      16:30   Chris Rock      10   
+
+Test case 4: find an event (fail)
+Event "Department Meeting" not found
+
+Test case 5: remove an event (successful)
+Event "Tutoring" found and removed successfully
+Event Type      Description             Location                Date            Time    Contact/Host    Guests
+Meeting         CSE017 class            RB-184                  01/20/2025      9:20    Houria Oudghiri 114  
+Appointment     Doctor                  Lehigh Valley Clinic    01/22/2025      11:10   Kathy Brown    
+Meeting         Programming Club        RB-184                  01/23/2025      10:45   Jack Buster     15   
+Appointment     Bank                    Wells Fargo             05/12/2025      10:30   Sarah Clark    
+Appointment     Dentist                 Dental Center           02/24/2025      13:15   Kelly Sullivan 
+Appointment     Advising                RB-184                  01/23/2024      12:20   Shelly Roberts 
+Appointment     SPA                     Beauty & Peace          12/20/2024      18:00   Lisa Mealy     
+Meeting         Science Fair            Stadium                 05/12/2025      10:15   Stacy Bouchard  100  
+Meeting         Research Seminar        BC-307                  01/23/2025      17:30   Robin Atwood    35   
+
+
+Test case 6: remove an event (fail)
+Event "Department meeting" not found
+
+Test case 7: find events by date (no events)
+0 events found with the date "01/01/0000"
+
+Test case 8: find events by date (one event)
+1 events found with the date "01/20/2025":
+Meeting         CSE017 class            RB-184                  01/20/2025      9:20    Houria Oudghiri 114  
+
+Test case 9: find events by date (more than one event)
+2 events found with the date "01/23/2025":
+Meeting         Programming Club        RB-184                  01/23/2025      10:45   Jack Buster     15   
+Meeting         Research Seminar        BC-307                  01/23/2025      17:30   Robin Atwood    35   
+
+Test case 10: find events by location (no events)
+0 events found with the location "PA-112"
+
+Test case 11: find events by location (one event)
+1 events found with the location "BC-307":
+Meeting         Research Seminar        BC-307                  01/23/2025      17:30   Robin Atwood    35   
+
+Test case 12: find events by location (more than one event)
+3 events found with the location "RB-184":
+Meeting         CSE017 class            RB-184                  01/20/2025      9:20    Houria Oudghiri 114  
+Meeting         Programming Club        RB-184                  01/23/2025      10:45   Jack Buster     15   
+Appointment     Advising                RB-184                  01/23/2024      12:20   Shelly Roberts 
+
+Test case 13: sorting the events by location
+Event Type      Description             Location                Date            Time    Contact/Host    Guests
+Meeting         Research Seminar        BC-307                  01/23/2025      17:30   Robin Atwood    35   
+Appointment     SPA                     Beauty & Peace          12/20/2024      18:00   Lisa Mealy     
+Appointment     Dentist                 Dental Center           02/24/2025      13:15   Kelly Sullivan 
+Appointment     Doctor                  Lehigh Valley Clinic    01/22/2025      11:10   Kathy Brown    
+Meeting         CSE017 class            RB-184                  01/20/2025      9:20    Houria Oudghiri 114  
+Meeting         Programming Club        RB-184                  01/23/2025      10:45   Jack Buster     15   
+Appointment     Advising                RB-184                  01/23/2024      12:20   Shelly Roberts 
+Meeting         Science Fair            Stadium                 05/12/2025      10:15   Stacy Bouchard  100  
+Appointment     Bank                    Wells Fargo             05/12/2025      10:30   Sarah Clark  
